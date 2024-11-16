@@ -1,3 +1,32 @@
-body{
-    background-color: gray;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f8f3ee; 
+  }
+
+  h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 74px;
 }
+
+.main-title p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkgrey;
+}
+
+.main-title{
+  max-width: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 50px;
+  height: 70vh;
+}
+
+  
