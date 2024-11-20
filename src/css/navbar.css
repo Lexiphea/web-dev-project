@@ -11,7 +11,7 @@ nav{
     background-color: #f8f3ee;
     padding: 10px 20px;
     border-bottom: 1px solid #ddd;
-
+    height: 80px;
     display: flex;
     justify-content: flex-end;
   }

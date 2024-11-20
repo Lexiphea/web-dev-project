@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'HelveticaLight';
+    src: url('HelveticaLightRegular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'HelveticaLight', sans-serif;
+  }
+  
