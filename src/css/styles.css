@@ -1,20 +1,13 @@
-@font-face {
-  font-family: 'HelveticaLight';
-  src: 'src/HelveticaLightRegular.otf' format('opentype'); /* Corrected format */
-  font-weight: normal;
-  font-style: normal;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #ffffff;
   font-family: 'HelveticaLight', sans-serif;
-}
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -22,29 +15,41 @@ h1 {
   font-size: 74px;
 }
 
+.main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px;
+  height: 90vh;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
 .main-title p {
-  font-family: 'HelveticaLight', sans-serif; 
+  font-family: 'HelveticaLight', sans-serif;
   color: rgb(123, 123, 123);
 }
 
-.main-title {
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  align-items: flex-start; 
-  padding: 100px;
-  height: 70vh;
-  text-align: left;
-  position: relative; 
-  z-index: 1; 
-}
-
-img {
+.main-title img {
   width: 100vw;
-  height: 100vh;
-  object-fit: cover; 
-  position: absolute; 
+  height: 95vh;
+  object-fit: cover;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
 }
+
+.home2 h1 {
+  padding: 50px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.home2 img{
+  width: 10;
+}
+
