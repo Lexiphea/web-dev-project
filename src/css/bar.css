@@ -1,4 +1,8 @@
 .home2{
-    height: 200px;
     background-color: white;
+}
+
+.rating{
+    background-color: #F7F4ED;
+    height: 800px;
 }
