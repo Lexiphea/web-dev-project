@@ -8,10 +8,12 @@
   <link rel="stylesheet" href="./css/navbar.css">
   <link rel="stylesheet" href="./css/font.css">
   <link rel="stylesheet" href="./css/product.css">
+  <link rel="stylesheet" href="./css/bar.css">
+  <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
-
-  <header class="navbar-section">
+  <!-- Navbar Section -->
+  <header>
     <nav class="navbar">
       <ul class="nav-links">
         <li><a href="#" class="active">Products</a></li>
@@ -24,60 +26,108 @@
     </nav>
   </header>
 
-  <main class="homepage">
-    
-
-    <section class="main-title">
-      <img src="img/maintitle.png" alt="Main Title Image">
-      <h1>Kuddles</h1>
-      <p>Where we bring comfort with toys.</p>
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="img/maintitle.png" alt="Main Title Background">
+      <div class="hero-content">
+        <h1>Kuddles</h1>
+        <p>Where we bring comfort with toys.</p>
+      </div>
     </section>
 
-    <section class="home2">
-
-      <h1>Childrens Favourite</h1>
-      
+    <!-- Featured Products -->
+    <section class="featured-products">
+      <h1>Children's Favourite</h1>
       <div class="product-container">
-
+        <!-- Product Cards -->
         <div class="product">
-          <img src="img/pig.png" alt="Product 1">
+          <img src="img/pig.png" alt="Chonky Chunk">
           <h3 class="product-name">Chonky Chunk</h3>
           <p class="product-price">$29.99</p>
-
           <div class="product-actions">
             <button class="add-to-cart">Add to Cart</button>
             <button class="like-btn">♡</button>
           </div>
         </div>
-
         <div class="product">
-          <img src="img/giraffe.png" alt="Product 2">
+          <img src="img/giraffe.png" alt="Short Dork">
           <h3 class="product-name">Short Dork</h3>
           <p class="product-price">$39.99</p>
-
           <div class="product-actions">
             <button class="add-to-cart">Add to Cart</button>
             <button class="like-btn">♡</button>
           </div>
         </div>
-
         <div class="product">
-          <img src="img/dog.png" alt="Product 2">
+          <img src="img/dog.png" alt="Woofy Woof">
           <h3 class="product-name">Woofy Woof</h3>
           <p class="product-price">$39.99</p>
-
           <div class="product-actions">
             <button class="add-to-cart">Add to Cart</button>
             <button class="like-btn">♡</button>
           </div>
         </div>
-
-
       </div>
-      
+      <a href="product.html" target="_blank" class="more-products">MORE PRODUCTS</a>
     </section>
-    
+
+    <!-- Ratings and Reviews -->
+    <section class="ratings">
+      <h1>Our Products</h1>
+      <div class="comment-grid">
+        <div class="comment">
+          <h2>Comfort</h2>
+          <img src="img/baby1.png" alt="Comfort Image">
+          <p>We want kids to have a comfy companion that keeps them company even on the loneliest days.</p>
+        </div>
+        <div class="comment">
+          <h2>Sustainable</h2>
+          <img src="img/baby2.png" alt="Sustainable Image">
+          <p>Our toys are crafted using sustainable materials like eco-friendly fabrics and responsibly sourced stuffing.</p>
+        </div>
+        <div class="comment">
+          <h2>Affordable</h2>
+          <img src="img/baby3.png" alt="Affordable Image">
+          <p>We hope parents from all backgrounds can give their child a warm buddy.</p>
+        </div>
+        <div class="comment">
+          <h2>Quality</h2>
+          <img src="img/baby4.png" alt="Quality Image">
+          <p>We ensure that every Kuddles toy is made with the highest quality to grow up with your child.</p>
+        </div>
+      </div>
+      <a href="product.html" target="_blank" class="more-about-us">MORE ABOUT US</a>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h2>About Us</h2>
+          <p>Kuddles is committed to creating toys that bring joy, comfort, and sustainability into your child's life.</p>
+        </div>
+        <div class="footer-socials">
+          <h2>Follow Us</h2>
+          <ul>
+            <li><a href="#" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">Facebook</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">TikTok</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h2>Contact Us</h2>
+          <p>Email: support@kuddles.com</p>
+          <p>Phone: +1 (800) 555-1234</p>
+          <p>Address: 123 Toy Lane, Comfort City, USA</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Kuddles. All Rights Reserved.</p>
+      </div>
+    </footer>
+
   </main>
-  
 </body>
 </html>
