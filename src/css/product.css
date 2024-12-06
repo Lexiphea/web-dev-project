@@ -42,33 +42,58 @@
     gap: 100px;
   }
   
-  .add-to-cart,
-  .like-btn {
-    padding: 8px 12px;
-    border: none;
-    font-size: 0.9rem;
-    cursor: pointer;
-  }
-  
-  .add-to-cart {
-    background: #6280bb86;
-    color: #fff;
-  }
-  
-  .add-to-cart:hover {
-    background: #6280bb56;
-  }
-  
-  .like-btn {
-    font-size: 24px;
-    padding: 0;
-    text-align: left;
-    background: #ffffff;
-  }
-  
-  .like-btn:hover {
-    background: #6c6c6c52;
-  }
+
+
+      /* Section Title */
+      .unique-section-title {
+        background-color: #F7F4ED;
+        font-size: 2em;
+        color: #333;
+        text-align: right;
+        font-size: 70px;
+      }
+      
+      /* Product Container */
+      .unique-product-container {
+        background-color: #F7F4ED;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+      }
+      
+      /* Product Card */
+      .unique-product-card {
+        padding: 15px;
+        width: 180px;
+    
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .unique-product-card img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px;
+      }
+      
+      .unique-product-name {
+        text-align: left;
+        font-weight: 1;
+        font-size: 1.2em;
+        margin: 10px 0;
+      }
+      
+      .unique-product-price {
+        text-align: left;
+        color: #555;
+        margin-bottom: 15px;
+      }
+      
   
   /* Responsive design for smaller screens */
   @media (max-width: 768px) {
