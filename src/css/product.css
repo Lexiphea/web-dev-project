@@ -19,10 +19,11 @@
   /* Product image */
   .product img,
   .product-new img{
+    background-color: inherit;
     width: auto;
     height: 300px;
   }
-  
+
   .product-name {
     font-size: 1.2rem;
     font-weight: 10;
@@ -40,11 +41,8 @@
   
   .product-actions {
     display: flex;
-    gap: 100px;
+    gap: 20px;
   }
-  
-
-  /*  */
 
   .bear-products {
     background-color: #F7F4ED;
@@ -57,9 +55,20 @@
     font-size: 70px;
   }
 
+  .pet-products {
+    background-color: #fcf1d7;
+    padding: 50px 20px;
+  }
+  
+  .pet-products h1 {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 70px;
+  }
+
   .product-new {
     width: calc(30% - 10px); 
-    background: #F7F4ED;
+    background: inherit;
     text-align: left;
     padding: 10px;
   }
