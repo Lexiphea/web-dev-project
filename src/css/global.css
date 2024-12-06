@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'HelveticaLight', sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+
+
+    /* Featured Products */
+    .featured-products {
+      padding: 50px 20px;
+    }
+    
+    .featured-products h1 {
+      text-align: right;
+      margin-bottom: 20px;
+      font-size: 70px;
+    }
+    
+    .product-container {
+      display: flex;
+      gap: 20px;
+      justify-content: space-around;
+    }
+    
+    .product {
+      text-align: center;
+    }
+    
+    .product img {
+      width: 100px;
+    }
+    
+    .product-actions {
+      display: flex;
+      align-items: center;
+      padding: 0; /* Remove unnecessary padding from the container */
+      margin: 0;  /* Remove unnecessary margins from the container */
+      gap: 8px; /* Adjust spacing between buttons */
+    }
+    
