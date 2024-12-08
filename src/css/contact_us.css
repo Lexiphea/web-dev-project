@@ -1,0 +1,123 @@
+.contact-us{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+  }
+
+.contact-us-header{
+    font-family: "Public Sans", sans-serif;
+    font-size: 50px;;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.contact-us-p{
+    font-family: "Public Sans", sans-serif;
+    font-size: 25px;
+    color: #808080;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.custom-list{
+    list-style-image: url('green-tick-button.png');
+    font-family: "Public Sans", sans-serif;
+    font-size: 25px;
+    color: #808080;
+    margin-top: 60px;
+    text-indent: 5px;
+    position: relative;
+    right: 14px;
+}
+
+.contact-us a{
+   text-decoration: none;
+}
+
+.message-form{
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.text{
+    padding: 10px;
+    font-family: "Public Sans", sans-serif;
+    font-size: 20px;
+    width: 54%;
+    color: #808080;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+}
+
+.text-comment{
+    padding: 10px;
+    font-family: "Public Sans", sans-serif;
+    font-size: 20px;
+    width: 54%;
+    color: #808080;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    resize: none;
+}
+
+.label-name{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+    right: 385px;
+}
+
+.label-email{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+    right: 388px;
+}
+
+.label-tel{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+    right: 348px;
+}
+
+.label-comment{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+    right: 370px;
+}
+
+.send-btn{
+    background-color: #D8DDE9;
+    border: none;
+    padding: 20px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    left: 343px;
+    margin-bottom: 30px;
+}
+
+.send-btn:hover{
+    background-color: #262217;
+    transition: 0.3s;
+    color: white;
+}
+
+
+
