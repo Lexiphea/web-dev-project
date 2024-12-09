@@ -1,9 +1,11 @@
-.about-us{
+.about-us {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 50px;
     background-color: #F7F6ED;
+    flex-wrap: wrap; /* Makes it responsive */
+    gap: 20px; /* Adds space between elements */
 }
 
 .about-us-header{
@@ -35,6 +37,7 @@
 }
 
 .ntmu-overall{
+    max-width: 50%;
     margin-top: 80px;
     margin-bottom: 25px;
 }
