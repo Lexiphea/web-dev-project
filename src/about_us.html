@@ -4,32 +4,33 @@
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuddles</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="font.css">
-    <link rel="stylesheet" href="product.css">
-    <link rel="stylesheet" href="about_us.css">
-    <link rel="stylesheet" href="contact_us.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/about_us.css">
+    <link rel="stylesheet" href="./css/contact_us.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <script src="collapsible.js" defer></script>
+
 </head>
 <body>
+
   <!--Navigation Bar-->
-  <header class="navbar-section">
+
+  <header>
     <nav class="navbar">
       <ul class="nav-links">
-        <li><a href="#" class="active">Products</a></li>
+        <li><a href="product.html" class="active">Products</a></li>
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="about_us.html">About</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Checkout</a></li>
         <li><a href="#" class="signin-button">Sign In</a></li>
       </ul>
     </nav>
   </header>
+
 
   <!--Nice to Meet You-->
   <section class="about-us">
@@ -41,7 +42,7 @@
         <button class="get-started-btn">Get Started</button>
       </div>   
       <div class="plushie-group">
-        <img src="Plushie Group.png" alt="ntmu-pic" height="440px" width="auto">
+        <img src="img/Plushie Group.png" alt="ntmu-pic" height="440px" width="auto">
       </div>
   </section>
 
@@ -49,7 +50,7 @@
     <section class="mission">
       <div class="mission-overall">
         <div class="mission-picture">
-          <img src="mission-picture.png" alt="mission-pic" height="400px" width="auto">
+          <img src="img/mission-picture.png" alt="mission-pic" height="400px" width="auto">
         </div>
         <div class="our-mission">
           <h2 class="mission-header">Our Mission</h2>
@@ -70,7 +71,7 @@
           Kuddles plushie is designed to be more than just a <br> toy — it's a source of warmth, smiles, and lasting <br> memories.</p>
         </div>
         <div class="story-picture">
-          <img src="story-picture.png" alt="story-pic" height="400px" width="auto">
+          <img src="img/story-picture.png" alt="story-pic" height="400px" width="auto">
         </div>
       </div>
     </section>
@@ -79,7 +80,7 @@
     <section class="service">
       <div class="service-overall">
         <div class="service-picture">
-          <img src="services-picture.png" alt="service-pic" height="400px" width="auto">
+          <img src="img/services-picture.png" alt="service-pic" height="400px" width="auto">
         </div>
         <div class="our-service">
           <h2 class="service-header">Our Service</h2>
@@ -97,7 +98,7 @@
         <!--First Question-->
         <div class="question">
           <button class="collapsible">What materials are Kuddles plushies made of?
-            <img class="grey-arrow" src="grey-down-vector.png" alt="arrow">
+            <img class="grey-arrow" src="img/grey-down-vector.png" alt="arrow">
           </button>
           <div class="content">
             <p>Our plushies are crafted using high-quality, hypoallergenic fabrics and stuffing to ensure they're safe, soft, and long-lasting.</p>
@@ -106,7 +107,7 @@
         <!--Second Question-->
         <div class="question">
           <button class="collapsible">Do you offer custom designs?
-            <img class="grey-arrow" src="grey-down-vector.png" alt="arrow">
+            <img class="grey-arrow" src="img/grey-down-vector.png" alt="arrow">
           </button>
           <div class="content">
             <p>Yes! We love bringing your ideas to life. You can work with us to create a personalized plushie that's unique to you or your loved one.</p>
@@ -115,7 +116,7 @@
         <!--Third Question-->
         <div class="question">
           <button class="collapsible">How do I care for my Kuddles plushie?
-            <img class="grey-arrow" src="grey-down-vector.png" alt="arrow">
+            <img class="grey-arrow" src="img/grey-down-vector.png" alt="arrow">
           </button>
           <div class="content">
             <p>We recommend spot cleaning with a mild detergent and air drying. For detailed instructions, refer to the care tag on your plushie.</p>
@@ -124,7 +125,7 @@
         <!--Fourth Question-->
         <div class="question">
           <button class="collapsible">Where do you ship?
-            <img class="grey-arrow" src="grey-down-vector.png" alt="arrow">
+            <img class="grey-arrow" src="img/grey-down-vector.png" alt="arrow">
           </button>
           <div class="content">
             <p>We currently ship worldwide! Shipping times and costs vary based on location, and we'll provide all details at checkout.</p>
@@ -133,7 +134,7 @@
         <!--Fifth Question-->
         <div class="question">
           <button class="collapsible">What is your return policy?
-            <img class="grey-arrow" src="grey-down-vector.png" alt="arrow">
+            <img class="grey-arrow" src="img/grey-down-vector.png" alt="arrow">
           </button>
           <div class="content">
             <p>We want you to love your plushie! If you're not satisfied, you can return unused items within 30 days for a refund or exchange. 
@@ -145,33 +146,28 @@
 
     <!--Footer-->
     <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-about">
-          <h2>About Us</h2>
-          <p>Kuddles is committed to creating toys that bring joy, comfort, and sustainability into your child's life.</p>
+      <div class="footer-top">
+        <div class="footer-logo">
+          <h2>Kuddles</h2>
         </div>
         <div class="footer-socials">
-          <h2>Follow Us</h2>
-          <ul>
-            <li><a href="#" target="_blank">Instagram</a></li>
-            <li><a href="#" target="_blank">Facebook</a></li>
-            <li><a href="#" target="_blank">Twitter</a></li>
-            <li><a href="#" target="_blank">TikTok</a></li>
-          </ul>
+          <a href="#" target="_blank">X</a>
+          <a href="#" target="_blank">Instagram</a>
         </div>
-        <div class="footer-contact">
-          <h2>Contact Us</h2>
-          <p>Email: support@kuddles.com</p>
-          <p>Phone: +1 (800) 555-1234</p>
-          <p>Address: 123 Toy Lane, Comfort City, USA</p>
-        </div>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Complaints</a></li>
+          <li><a href="#">Support Us</a></li>
+        </ul>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 Kuddles. All Rights Reserved.</p>
+        <p>© 2024 Kuddles. All rights reserved.</p>
       </div>
     </footer>
 
   </main>
-
+  <script src="./js/collapsible.js" defer></script>
 </body>
 </html>
