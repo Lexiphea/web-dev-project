@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuddles</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="font.css">
-    <link rel="stylesheet" href="product.css">
-    <link rel="stylesheet" href="about_us.css">
-    <link rel="stylesheet" href="contact_us.css">
-    <link rel="stylesheet" href="footer.css">
+
+
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/about_us.css">
+  <link rel="stylesheet" href="./css/contact_us.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/product.css">
+  <link rel="stylesheet" href="./css/bar.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/button.css">
+
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -18,17 +25,17 @@
 </head>
 <body>
     <!--Navigation Bar-->
-    <header class="navbar-section">
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="#" class="active">Products</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Checkout</a></li>
-                <li><a href="#" class="signin-button">Sign In</a></li>
-            </ul>
-        </nav>
+    <header>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="product.html" class="active">Products</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About</a></li>
+          <li><a href="contact_us.html">Contact</a></li>
+          <li><a href="#">Checkout</a></li>
+          <li><a href="#" class="signin-button">Sign In</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!--Ways of Contact-->
@@ -73,31 +80,26 @@
 
     <!--Footer-->
     <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-about">
-            <h2>About Us</h2>
-            <p>Kuddles is committed to creating toys that bring joy, comfort, and sustainability into your child's life.</p>
-          </div>
-          <div class="footer-socials">
-            <h2>Follow Us</h2>
-            <ul>
-              <li><a href="#" target="_blank">Instagram</a></li>
-              <li><a href="#" target="_blank">Facebook</a></li>
-              <li><a href="#" target="_blank">Twitter</a></li>
-              <li><a href="#" target="_blank">TikTok</a></li>
-            </ul>
-          </div>
-          <div class="footer-contact">
-            <h2>Contact Us</h2>
-            <p>Email: support@kuddles.com</p>
-            <p>Phone: +1 (800) 555-1234</p>
-            <p>Address: 123 Toy Lane, Comfort City, USA</p>
-          </div>
+      <div class="footer-top">
+        <div class="footer-logo">
+          <h2>Kuddles</h2>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2024 Kuddles. All Rights Reserved.</p>
+        <div class="footer-socials">
+          <a href="#" target="_blank">X</a>
+          <a href="#" target="_blank">Instagram</a>
         </div>
-      </footer>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Complaints</a></li>
+          <li><a href="#">Support Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Kuddles. All rights reserved.</p>
+      </div>
+    </footer>
 
 </body>
 </html>
