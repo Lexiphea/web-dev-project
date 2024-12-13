@@ -12,22 +12,22 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
   }
   
   .hero-content {
-    padding: 200px;
+    padding-top: 270px;
+    padding-left: 100px;
     position: relative;
     z-index: 1;
   }
   
   .hero-content h1 {
-    font-size: 74px;
-    font-weight: bold;
+    font-size: 120px;
+    font-weight:500;
   }
   
   .hero-content p {
-    font-size: 18px;
+    font-size: 25px;
     color: rgb(123, 123, 123);
   }
 
@@ -70,6 +70,7 @@
 
   .ratings h1{
     text-align: right;
+    margin-right:3vh;
     margin-bottom: 20px;
     font-size: 70px;
   }
@@ -77,11 +78,10 @@
   .comment-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px; /* Reduce the gap between the items */
+    gap: 40px; /* Reduce the gap between the items */
     margin: 0 auto;
     margin-top: 50px; /* Adjust spacing above */
     margin-bottom: 50px; /* Adjust spacing below */
-  
     width: 80%;
   }
   
@@ -93,23 +93,30 @@
     align-items: center;
     margin: 0; /* Ensure no extra margin is added */
     padding: 0; /* Remove any extra padding if present */
-    gap: 10px; /* Space between elements within each comment box */
+    gap: 15px; /* Space between elements within each comment box */
   }
+  
   .comment h2 {
-    font-weight: 100; /* Use a valid numeric value or keyword */
+    font-weight: 550; /* Use a valid numeric value or keyword */
     margin: 0;
     width: 100%;
   }
   
   .comment img {
     max-width: 100%;
-    height: auto;
-    margin: 0; /* Remove extra margin around the image */
+    height: 48vh;
+    margin: 0 3vw;
+    transition: 0.3s;
+  }
+  
+  .comment img:hover{
+    opacity: 0.5; 
   }
   
   .comment p {
     margin: 0;
     width: 100%; /* Restricts the text width to match the image's width */
+    font-size:16px;
   }
   
   .more-products,
@@ -119,7 +126,11 @@
     text-align: left;
     color: inherit;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(86, 86, 86);
     margin-left: 80px;
+  }
+
+  .more-products:hover{
+    color: #000000;
   }
