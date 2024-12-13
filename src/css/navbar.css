@@ -1,55 +1,94 @@
-nav{
-    font-family: Arial, Helvetica, sans-serif;
-    color: red;
-    
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
 }
 
-
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f8f3ee;
-    padding: 10px 50px;
-    width: 100%;
-    height: 90px;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #f8f3ee;
+  padding: 10px 20px;
+  width: 100%;
+  height: 70px;
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  transition: max-height 0.3s ease;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(58, 58, 58);
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a.active {
+  background-color: #eedcb9;
+}
+
+.nav-links a:hover {
+  background-color: #f0f0f0;
+}
+
+.signin-button {
+  width: 100px;
+  text-align: center;
+  background-color: #cccccc;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.signin-button:hover {
+  background-color: #aaa;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  z-index: 1100; /* Ensures it's above the dropdown */
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   .nav-links {
-    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f8f3ee;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000; /* Ensures it's on top of other elements */
+  }
+
+  .nav-links.active {
     display: flex;
-    gap: 20px;
   }
-  
-  .nav-links a {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(58, 58, 58);
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
+
+  .hamburger {
+    display: flex;
   }
-  
-  .nav-links a.active {
-    background-color: #eedcb9;
-  }
-  
-  .nav-links a:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .signin-button {
-    width: 100px;
-    text-align: center;
-    background-color: #cccccc;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .signin-button:hover {
-    background-color: #ccc;
-  }
-  
+}
