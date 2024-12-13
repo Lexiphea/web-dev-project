@@ -1,4 +1,9 @@
 /* Flexbox for product layout */
+.featured-products h1{
+  margin-right:3vh;
+}
+
+
 .product-container {
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +12,6 @@
     padding: 100px;
     padding-left: 200px;
   } 
-  
 
   .product {
     width: calc(30% - 10px); 
