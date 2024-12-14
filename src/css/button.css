@@ -6,7 +6,17 @@ button {
   margin-top: 5px;
 }
 
+.product-actions button {
+  padding: 4px 6px; 
+  font-size: 0.7rem; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 .add-to-cart{
+  height: 30px;
   width: 200px;
   padding: 10px 12px;
   border: none;
@@ -15,10 +25,13 @@ button {
 }
 
 .like-btn {
-  color: darkslateblue;
+  background-color: #ff4d4d60;
+  height: 30px;
+  width: 30px;
+  font-weight: bold;
+  color: rgb(139, 61, 61);
   font-size: 36px;
   padding: 0;
-  background: inherit;
 }
 
 .add-to-cart {
