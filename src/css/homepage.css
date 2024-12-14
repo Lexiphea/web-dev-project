@@ -121,6 +121,8 @@
   
   .more-products,
   .more-about-us {
+    display: flex;
+    justify-content: center;
     display: block;
     margin: 20px auto;
     text-align: left;
@@ -128,7 +130,6 @@
     text-decoration: none;
     font-size: 20px;
     color: rgb(86, 86, 86);
-    margin-left: 80px;
   }
 
   .more-products:hover{
