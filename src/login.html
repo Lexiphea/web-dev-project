@@ -128,16 +128,28 @@
             text-decoration: underline;
         }
     </style>
+
+<link rel="stylesheet" href="./css/navbar.css">
+<link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
-    <nav class="nav">
-        <a href="#">Products</a>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Checkout</a>
-        <a href="#">Sign in</a>
-    </nav>
+    <header>
+        <nav class="navbar">
+          <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul class="nav-links">
+            <li><a href="product.html" class="active">Products</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="login.html" class="signin-button">Sign In</a></li>
+          </ul>
+        </nav>
+      </header>
 
     <div class="container">
         <div class="tabs">
@@ -176,19 +188,28 @@
     </div>
 
     <footer class="footer">
-        <div class="social-links">
-            <a href="#">𝕏</a>
-            <a href="#">📷</a>
+        <div class="footer-top">
+          <div class="footer-logo">
+            <h2>Kuddles</h2>
+          </div>
+          <div class="footer-socials">
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+          </div>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Complaints</a></li>
+            <li><a href="#">Support Us</a></li>
+          </ul>
         </div>
-        <div class="footer-links">
-            <a href="#">Kuddles</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Frequently Asked Questions</a>
-            <a href="#">Complaints</a>
-            <a href="#">Support Us</a>
+        <div class="footer-bottom">
+          <p>© 2024 Kuddles. All rights reserved.</p>
         </div>
-    </footer>
+      </footer>
 
     <script>
         function switchTab(tab) {
