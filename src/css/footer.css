@@ -66,3 +66,14 @@
     color: #666;
     margin: 0;
   }
+
+  .footer-socials a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px; /* Adjust size */
+    margin-right: 15px; /* Adjust spacing */
+  }
+  
+.footer-socials a:hover {
+    color: #555;
+  }

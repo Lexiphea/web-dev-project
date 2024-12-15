@@ -5,14 +5,16 @@
     justify-content: space-between;
     padding: 50px;
     background-color: #F7F6ED;
-    flex-wrap: wrap; /* Makes it responsive */
-    gap: 20px; /* Adds space between elements */
+    flex-wrap: wrap;
+    gap: 20px; 
+    border-top: 2px solid #D9D9D9;
 }
 
 .about-us-header{
     font-family: "Inter", sans-serif;
     font-weight: 560;
     font-size: 70px;
+    margin-bottom: 30px;
 }
 
 .about-us-p{
@@ -29,6 +31,7 @@
     font-size: 20px;
     font-weight: 550;
     cursor: pointer;
+    margin-top: 35px;
 }
 
 .get-started-btn:hover{
@@ -49,8 +52,13 @@
 
 .plushie-group{
     position: absolute;
-    top: 30%;
-    left: 48%
+    top: 13%;
+    left: 48%;
+    transition: 0.3s ease-in-out;
+}
+
+.plushie-group:hover{
+    transform: translateY(-20px);
 }
 
 .mission{
@@ -61,6 +69,7 @@
     font-family: "Inter", sans-serif;
     font-weight: 520;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .mission-p{
@@ -72,11 +81,16 @@
 
 .mission-picture{
     margin: 130px;
+    transition: 0.3s ease-in-out;
+}
+
+.mission-picture:hover{
+    transform: translateY(-20px);
 }
 
 .our-mission{
     position: relative;
-    top: 170px;
+    top: 248px;
 }
 
 .mission-overall{
@@ -89,6 +103,7 @@
     font-family: "Inter", sans-serif;
     font-weight: 520;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .story-p{
@@ -100,6 +115,11 @@
 
 .story-picture{
     margin-left: 340px;
+    transition: 0.3s ease-in-out;
+}
+
+.story-picture:hover{
+    transform: translateY(-20px);
 }
 
 .story-overall{
@@ -110,7 +130,7 @@
 .our-story{
     position: relative;
     left: 170px;
-    bottom: -10px;
+    bottom: -70px;
 }
 
 .service-header{
@@ -118,6 +138,7 @@
     font-family: "Inter", sans-serif;
     font-weight: 520;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .service-p{
@@ -129,6 +150,11 @@
 
 .service-picture{
     margin: 130px;
+    transition: 0.3s ease-in-out;
+}
+
+.service-picture:hover{
+    transform: translateY(-20px);
 }
 
 .service-overall{
@@ -138,7 +164,7 @@
 
 .our-service{
     position: relative;
-    top: 135px;
+    top: 190px;
 }
 
 .faq-header {
@@ -147,6 +173,7 @@
     font-weight: 500;
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 50px;
 }
   
 .faq-overall {

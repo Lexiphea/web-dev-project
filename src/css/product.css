@@ -1,93 +1,173 @@
-/* Flexbox for product layout */
-.featured-products h1{
-  margin-right:3vh;
+.featured-products h1 {
+  margin-right: 3vh;
 }
 
 
 .product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 100px;
-    padding-left: 200px;
-  } 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
+  align-items: flex-start;
+  gap: 15px; 
+  padding: 20px 10px; 
+}
 
-  .product {
-    width: calc(30% - 10px); 
-    background: #ffffff;
-    text-align: left;
-    padding: 10px;
-  }
+.product {
+  width: calc(50% - 15px); 
+  max-width: 250px;
+  background: #ffffff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.product img {
+  background-color: inherit;
+  width: auto;
+  height: 180px; 
+  margin-bottom: 8px;
+  object-fit: contain; 
+}
+
+.product-name {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: rgb(60, 60, 60);
+  margin: 8px 0 4px; 
+}
+
+.product-price {
+  font-size: 0.85rem; 
+  color: #888;
+  margin: 0 0 8px;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: center;
+  gap: 8px; 
+}
+
+
+
+.product-actions button:hover {
+  background-color: #d6d6d6;
+}
+
+.more-products {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem; 
+  color: #444;
+  text-decoration: none;
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.more-products:hover {
+  background-color: #e0e0e0;
+}
+
+.product-new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(50% - 15px); 
+  max-width: 250px; 
+  background-color: inherit;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-new:hover {
+  transform: scale(1.05);
+}
+
+
+.product-new img {
+  max-width: 100%;
+  height: 150px; 
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+
+.bear-products{
+background-color: #DFD3C3;
+
+}
+.bear-products h1{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.pet-products{
+  background-color: #D0B8A8;
   
-  /* Product image */
-  .product img,
-  .product-new img{
-    background-color: inherit;
-    width: auto;
-    height: 300px;
+  }
+  .pet-products h1{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    font-size: 70px;
+    margin-bottom: 10px;
+  
+  }
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .product {
+    width: calc(50% - 15px); 
+    max-width: unset;
+  }
+
+  .product-container {
+    padding: 15px 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    width: calc(100% - 20px); 
+    max-width: unset;
+  }
+
+  .product img {
+    height: 120px;
   }
 
   .product-name {
-    font-size: 1.2rem;
-    font-weight: 10;
-    color: rgb(60, 60, 60);
-    margin: 10px 0 5px;
-    text-align: left;
+    font-size: 0.85rem; 
   }
-  
+
   .product-price {
-    font-size: 1rem;
-    color: #888;
-    margin: 0 0 10px;
-    text-align: left;
-  }
-  
-  .product-actions {
-    display: flex;
-    gap: 20px;
+    font-size: 0.75rem;
   }
 
-  .bear-products {
-    background-color: #F7F4ED;
-    padding: 50px 20px;
-  }
-  
-  .bear-products h1 {
-    text-align: right;
-    margin-bottom: 20px;
-    font-size: 70px;
+  .product-actions button {
+    padding: 3px 5px; 
+    font-size: 0.65rem;
   }
 
-  .pet-products {
-    background-color: #ffe29f62;
-    padding: 50px 20px;
+  .more-products {
+    font-size: 0.85rem;
+    padding: 8px 10px;
   }
-  
-  .pet-products h1 {
-    text-align: right;
-    margin-bottom: 20px;
-    font-size: 70px;
-  }
-
-  .product-new {
-    width: calc(30% - 10px); 
-    background: inherit;
-    text-align: left;
-    padding: 10px;
-  }
-  
-
-  /* Responsive design for smaller screens */
-  @media (max-width: 768px) {
-    .product {
-      width: calc(50% - 20px);
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .product {
-      width: 100%;
-    }
-  }
-  
+}
