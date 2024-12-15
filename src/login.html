@@ -4,140 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Signup Page</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Helvetica', sans-serif;
-        }
-
-        body {
-            background-color: #fff;
-        }
-
-        .nav {
-            display: flex;
-            justify-content: flex-end;
-            padding: 1rem;
-            background-color: #f8f8f8;
-            gap: 1.5rem;
-        }
-
-        .nav a {
-            text-decoration: none;
-            color: #333;
-            font-size: 0.9rem;
-        }
-
-        .container {
-            max-width: 400px;
-            margin: 2rem auto;
-            padding: 1rem;
-        }
-
-        .tabs {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        .tab {
-            flex: 1;
-            padding: 1rem;
-            text-align: center;
-            cursor: pointer;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            background: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .tab.active {
-            background: white;
-            border-color: #ccc;
-        }
-
-        .form-container {
-            padding: 2rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            background: white;
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group {
-            margin-bottom: 1rem;
-        }
-
-        input {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-        }
-
-        button {
-            width: 100%;
-            padding: 0.75rem;
-            background: #333;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #444;
-        }
-
-        .footer {
-            margin-top: 3rem;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .social-links {
-            margin-bottom: 1.5rem;
-        }
-
-        .social-links a {
-            margin: 0 0.5rem;
-            color: #333;
-            text-decoration: none;
-        }
-
-        .footer-links {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        .footer-links a {
-            color: #333;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/bar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-    <nav class="nav">
-        <a href="#">Products</a>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Checkout</a>
-        <a href="#">Sign in</a>
-    </nav>
+    <!-- Header from index.html -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="product.html" class="active">Products</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="login.html" class="signin-button">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="container">
         <div class="tabs">
@@ -175,18 +65,26 @@
         </div>
     </div>
 
+    <!-- Footer from index.html -->
     <footer class="footer">
-        <div class="social-links">
-            <a href="#">𝕏</a>
-            <a href="#">📷</a>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <h2>Kuddles</h2>
+            </div>
+            <div class="footer-socials">
+                <a href="#" target="_blank">X</a>
+                <a href="#" target="_blank">Instagram</a>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Complaints</a></li>
+                <li><a href="#">Support Us</a></li>
+            </ul>
         </div>
-        <div class="footer-links">
-            <a href="#">Kuddles</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Frequently Asked Questions</a>
-            <a href="#">Complaints</a>
-            <a href="#">Support Us</a>
+        <div class="footer-bottom">
+            <p>© 2024 Kuddles. All rights reserved.</p>
         </div>
     </footer>
 
