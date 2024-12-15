@@ -25,7 +25,7 @@
         <div></div>
       </div>
       <ul class="nav-links">
-        <li><a href="product.html" class="active">Products</a></li>
+        <li><a href="product.html">Products</a></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="about_us.html">About</a></li>
         <li><a href="contact_us.html">Contact</a></li>
@@ -35,7 +35,7 @@
     </nav>
   </header>
 
-
+  <!-- Log In / Sign Up Section -->
     <div class="container">
         <div class="tabs">
             <div class="tab active" onclick="switchTab('login')">Log In</div>
@@ -44,7 +44,7 @@
 
         <div class="form-container" id="loginForm">
             <h2>Log In</h2>
-            <form onsubmit="handleSubmit(event)">
+            <form id="loginForm" onsubmit="handleSubmit(event)">
                 <div class="form-group">
                     <input type="email" placeholder="Email" required>
                 </div>
@@ -57,7 +57,7 @@
 
         <div class="form-container" id="signupForm" style="display: none;">
             <h2>Sign Up</h2>
-            <form onsubmit="handleSubmit(event)">
+            <form id="signupForm" onsubmit="handleSubmit(event)">
                 <div class="form-group">
                     <input type="email" placeholder="Email" required>
                 </div>
@@ -95,31 +95,7 @@
         </div>
     </footer>
 
-    <script>
-        function switchTab(tab) {
-            const loginForm = document.getElementById('loginForm');
-            const signupForm = document.getElementById('signupForm');
-            const tabs = document.querySelectorAll('.tab');
-            
-            if (tab === 'login') {
-                loginForm.style.display = 'block';
-                signupForm.style.display = 'none';
-                tabs[0].classList.add('active');
-                tabs[1].classList.remove('active');
-            } else {
-                loginForm.style.display = 'none';
-                signupForm.style.display = 'block';
-                tabs[0].classList.remove('active');
-                tabs[1].classList.add('active');
-            }
-        }
-
-        function handleSubmit(event) {
-            event.preventDefault();
-            // Add your form submission logic here
-            console.log('Form submitted');
-        }
-    </script>
+    <script src="js/login.js"></script>
     <script src="js/navbar.js"></script>
 </body>
 </html>
