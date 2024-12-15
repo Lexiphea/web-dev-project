@@ -175,16 +175,16 @@
     margin-top: 10px;
     margin-bottom: 50px;
 }
-  
+
 .faq-overall {
     max-width: 700px;
     margin: 0 auto;
 }
-  
+
 .question {
     margin-bottom: 10px;
 }
-  
+
 .collapsible {
     cursor: pointer;
     background-color: white;
@@ -201,13 +201,13 @@
     padding: 15px 20px;
     transition: 0.3s;
 }
-  
+
 .grey-arrow {
     transition: transform 0.3s ease;
     height: 12px;
     width: 12px;
 }
-  
+
 .content {
     display: none;
     padding: 15px 20px;

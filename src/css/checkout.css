@@ -248,6 +248,16 @@ header {
     margin-bottom: 20px;
 }
 
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items;
+}
+
+header a {
+    margin-left: 0;
+}
+
 .kuddles-title {
     cursor: pointer;
     font-size: 2em;
