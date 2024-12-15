@@ -5,8 +5,9 @@
     justify-content: space-between;
     padding: 50px;
     background-color: #F7F6ED;
-    flex-wrap: wrap; /* Makes it responsive */
-    gap: 20px; /* Adds space between elements */
+    flex-wrap: wrap;
+    gap: 20px; 
+    border-top: 2px solid #D9D9D9;
 }
 
 .about-us-header{
