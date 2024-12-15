@@ -27,10 +27,8 @@ function handleSubmit(event) {
             alert('Passwords do not match!');
             return; // Exit the function if passwords don't match
         }
-         // Add your actual signup logic here.  This is a placeholder.
         alert('Signup successful!');
     } else if (form.id === 'loginForm') {
-        // Add your login logic here. This is a placeholder.
         alert('Login successful!');
     }
 }
