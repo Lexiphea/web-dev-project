@@ -131,7 +131,7 @@ background-color: #DFD3C3;
   
   }
 
-/* Responsive design for smaller screens */
+
 @media (max-width: 768px) {
   .product {
     width: calc(50% - 15px); 

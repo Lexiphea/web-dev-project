@@ -1,4 +1,4 @@
-/* Global Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,6 @@ body {
     padding: 20px;
 }
 
-/* Container Styles */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -20,7 +19,7 @@ body {
     gap: 30px;
 }
 
-/* Checkout Form Styles */
+
 .checkout-form {
     flex: 1 1 60%;
     background: white;
@@ -64,18 +63,17 @@ input:focus, select:focus {
     border-color: #ffc107;
 }
 
-/* Phone Input Styles */
+
 .phone-input {
     display: flex;
     gap: 10px;
-    /* Removed flex-wrap */
 }
 
 .phone-input input[type="text"]:first-child {
     width: 60px;
 }
 
-/* Payment Method Styles */
+
 .payment-methods {
     display: flex;
     gap: 15px;
@@ -95,7 +93,7 @@ input:focus, select:focus {
     background-color: #f8f8f8;
 }
 
-/* Payment Fields Styles */
+
 .payment-fields {
     margin-bottom: 20px;
     display: flex;
@@ -110,12 +108,12 @@ input:focus, select:focus {
     flex: 1;
 }
 
-/* Hidden by default */
+
 .hidden {
     display: none;
 }
 
-/* Order Item Styles */
+
 .order-item {
     display: flex;
     gap: 15px;

@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Navigation */
+
 nav {
     padding: 1rem;
     border-bottom: 1px solid #eee;
@@ -20,7 +20,7 @@ nav {
     color: #000;
 }
 
-/* Main content */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
