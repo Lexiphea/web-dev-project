@@ -68,7 +68,7 @@ input:focus, select:focus {
 .phone-input {
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;
+    /* Removed flex-wrap */
 }
 
 .phone-input input[type="text"]:first-child {
@@ -179,6 +179,7 @@ input:focus, select:focus {
 .promo-code-button:hover {
     background: #e0a800;
     border-color: rgba(0, 0, 0, 0.5);
+    transition: 0.1s;
 }
 
 /* Responsive Styles */
@@ -221,7 +222,7 @@ input:focus, select:focus {
 }
 
 .proceed-button:hover {
-    background: #218838;
+    background: #b4a72d;
 }
 
 .checkout-button {
@@ -232,7 +233,7 @@ input:focus, select:focus {
 }
 
 .checkout-button:hover {
-    background: #b68800;
+    background: #e5ff00;
     border-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -246,6 +247,17 @@ input:focus, select:focus {
 /* Navbar and Header Styles */
 header {
     margin-bottom: 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically align items in header */
+}
+
+/* Aligns cancel button with order summary */
+header .container a {
+    margin: 1vh 1.5vw;
 }
 
 .kuddles-title {
@@ -275,7 +287,13 @@ header hr {
     }
 
     .phone-input {
-        flex-direction: column;
+        display: flex;
+        gap: 10px;
+        /*  KEEP THIS: flex-wrap: wrap; */
+    }
+
+    .phone-input input[type="text"]:first-child {
+        width: 80px;
     }
 
     .promo-code {
@@ -292,6 +310,11 @@ header hr {
         font-size: 20px;
     }
 
+   .phone-input {
+    flex-direction: row;
+    }
+}
+
     .promo-code-button {
         font-size: 14px;
         padding: 10px;
@@ -301,4 +324,3 @@ header hr {
         font-size: 14px;
         padding: 10px;
     }
-}
