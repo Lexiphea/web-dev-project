@@ -89,8 +89,7 @@
 }
 
 .our-mission{
-    position: relative;
-    top: 248px;
+    transform: translate(0px,230px);
 }
 
 .mission-overall{
@@ -128,9 +127,7 @@
 }
 
 .our-story{
-    position: relative;
-    left: 170px;
-    bottom: -70px;
+    transform: translate(170px,50px);
 }
 
 .service-header{
@@ -163,8 +160,7 @@
 }
 
 .our-service{
-    position: relative;
-    top: 190px;
+    transform: translate(0px,195px);
 }
 
 .faq-header {
@@ -224,4 +220,70 @@
 
 .question.open .grey-arrow {
     transform: rotate(180deg);
+}
+
+@media screen and (max-width: 600px) {
+    .plushie-group{
+        opacity: 0;
+    }
+
+    .mission-header{
+        font-size: 30px;
+    }
+
+    .mission-p{
+        font-size: 12px;
+    }
+
+    .mission-picture{
+        transform: translate(-295px, -200px);
+    }
+
+    .our-mission{
+        transform: translate(0px,-265px);
+    }
+
+    .mission-overall{
+        transform: translate(30px,200px);
+    }
+
+    .story-header{
+        font-size: 30px;
+    }
+
+    .story-p{
+        font-size: 12px;
+    }
+
+    .story-picture{
+        transform: translate(-330px,-150px);
+    }
+
+    .story-overall{
+        transform: translate(-150px);
+    }
+
+    .our-story{
+        transform: translate(175px,467px);
+    }
+
+    .service-header{
+        font-size: 30px;
+    }
+
+    .service-p{
+        font-size: 12px;
+    }
+
+    .our-service{
+        transform: translate(36px,-70px);
+    }
+
+    .service-picture{
+        transform: translate(-248px);
+    }
+
+    .faq-header{
+        font-size: 23px;
+    }
 }
