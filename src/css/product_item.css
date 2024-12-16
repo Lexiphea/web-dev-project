@@ -1,0 +1,123 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Navigation */
+nav {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Main content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 1;
+    background: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img {
+    max-width: 80%;
+    height: auto;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.product-title {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.product-price {
+    font-size: 1.5rem;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.quantity-selector button {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #000;
+    background: none;
+    cursor: pointer;
+}
+
+.quantity-selector input {
+    width: 3rem;
+    height: 2rem;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.add-to-cart {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.add-to-cart:hover {
+    opacity: 0.8;
+}
+
+.wishlist-btn {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: none;
+    border: 1px solid #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.product-description {
+    margin-top: 2rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .product {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
