@@ -71,8 +71,7 @@
     font-size: 18px;
     display: block;
     margin-bottom: 5px;
-    position: relative;
-    right: 453px;
+    transform: translate(-454px);
 }
 
 .label-email{
@@ -80,8 +79,7 @@
     font-size: 18px;
     display: block;
     margin-bottom: 5px;
-    position: relative;
-    right: 456px;
+    transform: translate(-456px);
 }
 
 .label-tel{
@@ -89,8 +87,7 @@
     font-size: 18px;
     display: block;
     margin-bottom: 5px;
-    position: relative;
-    right: 418px;
+    transform: translate(-418px);
 }
 
 .label-comment{
@@ -98,8 +95,7 @@
     font-size: 18px;
     display: block;
     margin-bottom: 5px;
-    position: relative;
-    right: 438px;
+    transform: translate(-440px);
 }
 
 .send-btn{
@@ -110,8 +106,7 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    position: relative;
-    left: 280px;
+    transform: translate(280px);
     margin-bottom: 150px;
 }
 
@@ -121,5 +116,27 @@
     color: white;
 }
 
+@media screen and (max-width: 600px) {
+    .label-name{
+        transform: translate(0px);
+    }
 
+    .label-email{
+        transform: translate(0px);
+    }
 
+    .label-tel{
+        transform: translate(0px);
+    }
+
+    .label-comment{
+        transform: translate(0px);
+    }
+
+    .send-btn {
+        transform: translate(0);
+        margin: 0 auto;
+        margin-left: 66px;
+        margin-bottom: 180px;
+    }
+}
